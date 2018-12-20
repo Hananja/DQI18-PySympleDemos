@@ -4,7 +4,7 @@ while new_row:
     sum: float = 0.0
     new_value = True
     while new_value:
-        value: float  = float(input("Messwert: "))
+        value: float = float(input("Messwert: "))
         if value >= 0:
             count = count + 1
             sum = sum + value
