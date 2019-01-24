@@ -21,7 +21,7 @@ def get_product(data: List[int]) -> int:
     """vereinfachte Lösung als Funktion"""
     product = 1
     for element in data:
-        product *= element
+        product = product * element
     return product
 
 
@@ -52,8 +52,20 @@ def run_demo_count():
     print(mycount)
 
 
+# Aufgabe 1 c
+
+def get_product_exp(data: List[List[int]]) -> int:
+    product = 1
+    for element in data: # element ist List[int]
+        product *= element[0] ** element[1]
+    return product
+
+def run_demo_get_product_ext():
+    mylist = [[2, 2], [3, 1], [5, 0], [7, 1]]
+    print(get_product_exp(mylist))
 
 
 # Hauptprogramm
-run_demo_prime_numbers()
-run_demo_count()
+#run_demo_prime_numbers()
+#run_demo_count()
+run_demo_get_product_ext()
