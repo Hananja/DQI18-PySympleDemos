@@ -6,8 +6,8 @@ def message(msg):
   print(msg)
 
 try:
-  messager("Hello TAI!")
+  messager("Hello DQI!")
   f = open("gibtesnicht.txt", "r")
   f.readlines()
-except:
+except: # besser NICHT ohne Fehlerangabe!
   print("Die Angegebene Datei existiert nicht")

@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 # Exception 5
-
-
+import traceback
 anzahl = "zwanzig"
 
 try:
@@ -13,3 +12,4 @@ except IOError:
   print("Die Angegebene Datei existiert nicht")
 except TypeError as e:
   print("TypeError:", str(e))
+  # optional: print(traceback.format_exc()) mit import traceback

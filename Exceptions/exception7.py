@@ -6,7 +6,7 @@ def message(msg):
   print(msg)
 
 try:
-  messager("Hello TAI!")
+  messager("Hello DQI!")
   f = open("gibtesnicht.txt", "r")
   f.readlines()
 except OSError as e: # Variable e enthält das Exception Objekt

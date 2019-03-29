@@ -11,3 +11,7 @@ try:
     f.readlines()
 except:
   print("Die Angegebene Datei existiert nicht")
+
+# Fehlerkategorien:
+# Zeilen 5 und 8: Programmierfehler (zur Programmierzeit behebbar)
+# Zeile 10: Laufzeitfehler    (nicht zur Programmierzeit behebbar)
