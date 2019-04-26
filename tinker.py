@@ -1,9 +1,10 @@
 # Demo für PEP8
 
 import random
-def myRandom(max:int)->int:
-    return random.randint(  0, max)
 
 
+def my_random(max_value: int)->int:
+    return random.randint(0, max_value)
 
-print(myRandom(10) )
+
+print(my_random(10))
