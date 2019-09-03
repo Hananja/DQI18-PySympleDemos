@@ -12,10 +12,10 @@ def f(p):
 def g(p):
     data = [(1,2,3), (4,5,6), (7,8,9), (10, 11, 12)]
     try:
-        g.index += 1
-        g.index %= len(data)
+        g.index += 1            # next element
+        g.index %= len(data)    # wrap around
     except AttributeError as e:
-        g.index = 0
+        g.index = 0             # first element
     return data[g.index]
 
 print(f(1))
