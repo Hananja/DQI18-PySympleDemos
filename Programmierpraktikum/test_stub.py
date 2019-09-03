@@ -1,4 +1,6 @@
 # Beispiel für eine Stubfunktion
+#
+# Eine Funktion liefert zum Test Dummydaten zurück, die sich von Aufruf zu Aufruf verändern.
 
 def f(p):
     data = [(1,2,3), (4,5,6), (7,8,9)]
@@ -6,6 +8,25 @@ def f(p):
     f.index += 1
     return data[f.index]
 
+# Alternative Implementierung
+def g(p):
+    data = [(1,2,3), (4,5,6), (7,8,9), (10, 11, 12)]
+    try:
+        g.index += 1
+        g.index %= len(data)
+    except AttributeError as e:
+        g.index = 0
+    return data[g.index]
+
 print(f(1))
 print(f(1))
 print(f(1))
+
+print("---".center(10))
+
+print(g(1))
+print(g(1))
+print(g(1))
+print(g(1))
+print(g(1))
+print(g(1))
