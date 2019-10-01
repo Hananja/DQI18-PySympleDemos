@@ -14,5 +14,5 @@ testfiles = [open(filename) for filename in filenames]
 result = itertools.chain(testfiles[0], testfiles[1], testfiles[2])
 
 for line in result:
-    print(line)
+    print(line, end="") # Newlines sind schon vorhanden
 map(lambda f: f.close(), testfiles)
