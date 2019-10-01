@@ -1,4 +1,4 @@
-# test with itertools.chain(...)
+# Demo von itertools.chain(...)
 
 import itertools
 
